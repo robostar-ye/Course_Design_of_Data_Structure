@@ -2,8 +2,9 @@
 // Created by robos on 2020/12/23.
 //
 
-#include "../Headers/mainwindow.h"
-#include "../ui_mainwindow.h"
+#include "../Headers/main_window.h"
+
+#include "ui_mainwindow.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
