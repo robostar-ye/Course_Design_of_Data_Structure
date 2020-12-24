@@ -96,8 +96,9 @@ void School::Ppath(std::vector<int> path, int i, int v, std::vector<Place> &vert
 
     //std::cout<<"path size is:"<<path.size()<<"  "<<v<<"  "<<path[i]<<std::endl;
     int k;
+    //int m = path.size();
     k = path[i];
-    std::cout<<k<<std::endl;
+    //std::cout<<k<<std::endl;
     if (k == v)
         return;
     Ppath(path, k, v, vertexe_path);
@@ -112,12 +113,12 @@ std::vector<Place> School::ShortestPath(int num_start_point, int num_end_point) 
     distance.reserve(num_vertex);
     path.reserve(num_vertex);
 
-//    for (int i = 0; i < num_vertex; i++) {
-//        distance.emplace_back(adjacency_matrix[num_start_point][i]);
-//        path.emplace_back(num_start_point);
-//        vertexes[i].InitFlag();
-//        std::cout<<"flag1:"<<vertexes[i].flag()<<std::endl;
-//    }
+    for (int i = 0; i < num_vertex; i++) {
+        distance.emplace_back(adjacency_matrix[num_start_point][i]);
+        path.emplace_back(num_start_point);
+        vertexes[i].InitFlag();
+        //std::cout<<"flag1:"<<vertexes[i].flag()<<std::endl;
+    }
     vertexes[num_start_point].InverseFlag();
 //    std::cout<<"flag2:"<<vertexes[num_start_point].flag()<<std::endl;
     vertexes_s.emplace_back(vertexes[num_start_point]);
