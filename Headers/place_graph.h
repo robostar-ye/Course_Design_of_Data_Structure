@@ -37,12 +37,15 @@ public:
     std::vector<Place> ShortestPath(Place start_point, Place end_point); //
     std::vector<Place> ShortestPath(int num_start_point, int num_end_point);
     void Ppath(std::vector<int> path, int i, int v, std::vector<Place> &vertexe_path);
+    //std::string introduction_place(int num)(return vertexes[num].introduction(););
 private:
     std::vector<Place>vertexes;//顶点表
     std::vector<std::vector<int>>adjacency_matrix;//邻接矩阵，相当于边表
     int num_vertex = 0; // 顶点数
     int num_edges = 0;  // 边数
 };
+
+
 
 namespace names_places{
     extern std::string str1 ;//= "西门";

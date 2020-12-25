@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(design LANGUAGES CXX)
+project(Course_Design_of_Data_Structure LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
@@ -22,7 +22,7 @@ add_executable(design
         Headers/main_window.h
         Sources/place_graph.cpp
         Headers/place_graph.h
-        ${PROJECT_SOURCE_DIR}/mainwindow.ui
+        Sources/mainwindow.ui
         )
 
 target_link_libraries(design PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

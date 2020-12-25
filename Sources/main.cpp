@@ -7,16 +7,11 @@
 #include "../Headers/place_graph.h"
 
 int main(int argc, char *argv[]) {
-    School CUMT;
-    CUMT.Init();
-    std::vector<Place> vec_temp= CUMT.ShortestPath(0,9);
-    int num_temp = vec_temp.size();
-    for(int i = 0; i < num_temp; i++){
-        std::cout<<vec_temp[i].name()<<vec_temp[i].num()<<" "<<std::endl;
-    }
-
+    //gui
     QApplication a(argc, argv);
     MainWindow w;
+    //w.setStyleSheet("./Sources/back.png");
+    w.setWindowTitle("校园风景自助查询平台");
     w.show();
     return a.exec();
 }
