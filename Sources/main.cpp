@@ -10,7 +10,6 @@ int main(int argc, char *argv[]) {
     //gui
     QApplication a(argc, argv);
     MainWindow w;
-    //w.setStyleSheet("./Sources/back.png");
     w.setWindowTitle("校园风景自助查询平台");
     w.show();
     return a.exec();

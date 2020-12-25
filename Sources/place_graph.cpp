@@ -102,7 +102,7 @@ void School::Ppath(std::vector<int> path, int i, int v, std::vector<Place> &vert
     if (k == v)
         return;
     Ppath(path, k, v, vertexe_path);
-    std::cout<<vertexes[k].name()<<std::endl;
+//    std::cout<<vertexes[k].name()<<std::endl;
     vertexe_path.emplace_back(vertexes[k]);
 }
 
